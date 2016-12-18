@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>React Circular Legend</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 200;
+      margin: 0 auto;
+      width: 750px;
+    }
+    textarea {
+      font-family: monospace;
+      font-size: inherit;
+      height: 150px;
+      width: 100%;
+    }
+    pre {
+      white-space: pre-wrap;
+    }
+    label {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<script src="//fb.me/react-with-addons-0.13.3.js"></script>
+<script src="//fb.me/JSXTransformer-0.13.3.js"></script>
+<script src="dist/react-circular-legend.js"></script>
+<script type="text/jsx">
+  function sigFigs(n, sig) {
+    var mult = Math.pow(10,
+      sig - Math.floor(Math.log(n) / Math.LN10) - 1);
+    return Math.round(n * mult) / mult;
+  }
+
+  const App = React.createClass({
+    getInitialState: function() {
+      return {
+        domain: [0, 10000],
+        ticks: [0, 2500, 5000, 10000],
+      };
+    },
+    componentDidMount: function() {
+      setTimeout(() => this.update(), 2000);
+    },
+    update: function() {
+      const max = sigFigs(Math.random() * 1e6, 1);
+      const quautMax = max / 4;
+
+      this.setState({
+        domain: [0, max],
+        ticks: [quautMax, quautMax*2, quautMax*3, quautMax*4],
+      });
+      setTimeout(() => this.update(), 2000);
+    },
+    render: function() {
+      return (
+        <div>
+          <h1>react-circular-legend</h1>
+          <svg width={200} height={200}>
+            <CircularLegend
+              ticks={this.state.ticks}
+              domainMax={this.state.domain[1]}
+              domainMin={this.state.domain[0]}
+            />
+          </svg>
+        </div>
+      );
+    },
+  });
+
+  React.render(<App/>, document.body);
+</script>
+</body>
+</html>

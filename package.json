@@ -1,0 +1,37 @@
+{
+  "name": "react-circular-legend",
+  "version": "0.0.1",
+  "description": "A circular legned component, using d3.js Edit",
+  "main": "dist/react-circular-legend.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ganezasan/react-circular-legend.git"
+  },
+  "keywords": [
+    "legend",
+    "d3",
+    "react",
+    "react-component"
+  ],
+  "author": "Takayuki Ito <istaka12@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ganezasan/react-circular-legend/issues"
+  },
+  "homepage": "https://github.com/ganezasan/react-circular-legend",
+  "peerDependencies": {
+    "react": ">= 0.13.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^5.2.2",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.12"
+  },
+  "dependencies": {
+    "d3": "^4.4.0",
+    "numeral": "^2.0.1"
+  }
+}
