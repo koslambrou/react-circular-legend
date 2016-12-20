@@ -4,7 +4,7 @@
   "description": "A circular legned component, using d3.js Edit",
   "main": "dist/react-circular-legend.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack-dev-server --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,8 @@
   "devDependencies": {
     "babel-loader": "^5.2.2",
     "node-libs-browser": "^0.5.2",
-    "webpack": "^1.9.12"
+    "webpack": "^1.9.12",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "d3": "^4.4.0",
