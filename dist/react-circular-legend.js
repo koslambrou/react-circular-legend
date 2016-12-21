@@ -177,19 +177,14 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      var sortedTicks = ticks.sort(d3.descending);
 	      var xEndTick = scale(sortedTicks[0]) + tickExtend;
-	      var maxDiameter = scale(sortedTicks[0]) * 2;
-	      var maxLabelLength = String(sortedTicks[0]).length;
+	      var diameter = rangeMax * 2;
 
 	      return _react2['default'].createElement(
-	        'svg',
-	        { width: 200, height: 200 },
-	        _react2['default'].createElement(
-	          'g',
-	          { className: 'circle-legend', transform: 'translate(' + (maxDiameter + maxLabelLength) + ', ' + maxDiameter + ')' },
-	          sortedTicks.map(function (tick, index) {
-	            return renderTick(tick, index, scale(tick), xEndTick, textMargin);
-	          })
-	        )
+	        'g',
+	        { className: 'circle-legend', transform: 'translate(' + diameter / 2 + ', ' + diameter + ')' },
+	        sortedTicks.map(function (tick, index) {
+	          return renderTick(tick, index, scale(tick), xEndTick, textMargin);
+	        })
 	      );
 	    }
 	  }]);
