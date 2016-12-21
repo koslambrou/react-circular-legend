@@ -191,12 +191,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return getFormatTextLength(a) > getFormatTextLength(b) ? a : b;
 	      });
 	      var maxTextWidth = getFormatTextLength(maxText) * wordWidth;
+
 	      var diameter = rangeMax * 2;
-	      console.log(diameter);
-	      console.log(xEndTick);
-	      console.log(textMargin);
-	      console.log(maxTextWidth);
-	      console.log(xEndTick + textMargin + maxTextWidth);
 
 	      var renderGelement = _react2['default'].createElement(
 	        'g',
