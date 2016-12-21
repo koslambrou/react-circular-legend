@@ -24,7 +24,7 @@ npm install react-circular-legend
 - ticks: (required) Array of numbers, see example above
 - domainMax: Number, default maximum number in ticks
 - domainMin: Number, default is 0
-- rangeMax: Number, default is 50, it's circle radius max.
+- rangeMax: Number, default is 80, it's circle radius max.
 - rangeMin: Number, default is 0
 - tickExtend: Number, default is 5
 - textMargin: Number, default is 5
@@ -35,7 +35,7 @@ npm install react-circular-legend
 
 ```
 import React from 'react';
-import { CircularLegend } from 'react-circular-legend';
+import CircularLegend from 'react-circular-legend';
 
 function Example() {
   return (
