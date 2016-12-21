@@ -1,10 +1,12 @@
 {
   "name": "react-circular-legend",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A circular legned component, using d3.js Edit",
   "main": "dist/react-circular-legend.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors"
+    "start": "webpack-dev-server --progress --colors",
+    "build": "webpack --progress --colors",
+    "deploy:page": "cp index.html example&&cp -R dist example&&gh-pages -d example"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "babel-loader": "^5.2.2",
+    "gh-pages": "^0.12.0",
     "node-libs-browser": "^0.5.2",
     "webpack": "^1.9.12",
     "webpack-dev-server": "^1.16.2"
