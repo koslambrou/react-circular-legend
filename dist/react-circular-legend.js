@@ -97,7 +97,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var defaultProps = {
 	  tickExtend: 5,
 	  textMargin: 5,
-	  rangeMax: 50,
+	  rangeMax: 80,
 	  rangeMin: 0,
 	  fontSize: 10,
 	  innerSvg: false
