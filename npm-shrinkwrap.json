@@ -1,6 +1,6 @@
 {
   "name": "react-circular-legend",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "dependencies": {
     "commander": {
       "version": "2.9.0"

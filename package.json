@@ -1,6 +1,6 @@
 {
   "name": "react-circular-legend",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A circular legned component, using d3.js Edit",
   "main": "dist/react-circular-legend.js",
   "scripts": {
