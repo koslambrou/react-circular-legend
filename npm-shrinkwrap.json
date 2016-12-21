@@ -1,0 +1,118 @@
+{
+  "name": "react-circular-legend",
+  "version": "0.0.1",
+  "dependencies": {
+    "commander": {
+      "version": "2.9.0"
+    },
+    "d3": {
+      "version": "4.4.0"
+    },
+    "d3-array": {
+      "version": "1.0.2"
+    },
+    "d3-axis": {
+      "version": "1.0.4"
+    },
+    "d3-brush": {
+      "version": "1.0.3"
+    },
+    "d3-chord": {
+      "version": "1.0.3"
+    },
+    "d3-collection": {
+      "version": "1.0.2"
+    },
+    "d3-color": {
+      "version": "1.0.2"
+    },
+    "d3-dispatch": {
+      "version": "1.0.2"
+    },
+    "d3-drag": {
+      "version": "1.0.2"
+    },
+    "d3-dsv": {
+      "version": "1.0.3"
+    },
+    "d3-ease": {
+      "version": "1.0.2"
+    },
+    "d3-force": {
+      "version": "1.0.4"
+    },
+    "d3-format": {
+      "version": "1.0.2"
+    },
+    "d3-geo": {
+      "version": "1.4.0"
+    },
+    "d3-hierarchy": {
+      "version": "1.0.3"
+    },
+    "d3-interpolate": {
+      "version": "1.1.2"
+    },
+    "d3-path": {
+      "version": "1.0.3"
+    },
+    "d3-polygon": {
+      "version": "1.0.2"
+    },
+    "d3-quadtree": {
+      "version": "1.0.2"
+    },
+    "d3-queue": {
+      "version": "3.0.3"
+    },
+    "d3-random": {
+      "version": "1.0.2"
+    },
+    "d3-request": {
+      "version": "1.0.3"
+    },
+    "d3-scale": {
+      "version": "1.0.4"
+    },
+    "d3-selection": {
+      "version": "1.0.3"
+    },
+    "d3-shape": {
+      "version": "1.0.4"
+    },
+    "d3-time": {
+      "version": "1.0.4"
+    },
+    "d3-time-format": {
+      "version": "2.0.3"
+    },
+    "d3-timer": {
+      "version": "1.0.3"
+    },
+    "d3-transition": {
+      "version": "1.0.3"
+    },
+    "d3-voronoi": {
+      "version": "1.1.0"
+    },
+    "d3-zoom": {
+      "version": "1.1.0"
+    },
+    "graceful-readlink": {
+      "version": "1.0.1"
+    },
+    "iconv-lite": {
+      "version": "0.4.15"
+    },
+    "numeral": {
+      "version": "2.0.3",
+      "from": "numeral"
+    },
+    "rw": {
+      "version": "1.3.2"
+    },
+    "xmlhttprequest": {
+      "version": "1.8.0"
+    }
+  }
+}
